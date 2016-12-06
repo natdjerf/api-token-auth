@@ -10,7 +10,32 @@
       <form id="sign-up">
         <fieldset>
           <legend>Sign up!</legend>
+          <input type="text" name="credentials[email]" value placeholder="email">
+          <input type="password" name="credentials[password]" value placeholder="password">
+          <input type="password" name="credentials[password]" value placeholder="password confirmation">
           <input type="submit" name="submit" value="Sign up!">
+        </fieldset>
+      </form>
+      <form id="sign-in">
+        <fieldset>
+          <legend>Already have an account? Sign in!</legend>
+          <input type="text" name="credentials[email]" value placeholder="email">
+          <input type="password" name="credentials[password]" value placeholder="password">
+          <input type="submit" name="submit" value="Sign in">
+        </fieldset>
+      </form>
+      <form id="change-password">
+        <fieldset>
+          <legend>Change password</legend>
+          <input type="password" name="passwords[old]" value placeholder="Current password">
+          <input type="password" name="passwords[new]" value placeholder="New password">
+          <input type="submit" name="submit" value="Change password">
+        </fieldset>
+      </form>
+      <form id="sign-out">
+        <fieldset>
+          <legend>Sign Out</legend>
+          <input type="submit" name="submit" value="Sign out">
         </fieldset>
       </form>
       <h1>Example</h1>
